@@ -6,7 +6,7 @@ resource "aws_route_table" "public_rt" {
     gateway_id = aws_internet_gateway.gw.id
   }
 
-    tags = {
+  tags = {
     Name = "${var.production_vpc}-public-rt"
   }
 }
